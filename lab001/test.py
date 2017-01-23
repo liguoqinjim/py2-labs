@@ -55,4 +55,4 @@ if __name__ == "__main__":
     json_dict = json.loads(json_text)
     print json_dict['total']
     for item in json_dict['comments']:
-        print item['content'].encode('gbk', 'ignore')
+        print item['content'].encode('utf8', 'ignore')

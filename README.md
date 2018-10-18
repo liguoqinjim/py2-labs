@@ -6,3 +6,4 @@
 |lab002|httpbin||
 |lab003|读写文件|
 |lab004|json||
+|lab005|urlcode|

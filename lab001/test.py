@@ -22,9 +22,9 @@ def get_params():
     first_key = forth_param
     second_key = 16 * 'F'
     h_encText = AES_encrypt(first_param, first_key, iv)
-    print h_encText;
+    print "result="+h_encText;
     h_encText = AES_encrypt(h_encText, second_key, iv)
-    print h_encText;
+    print "result="+h_encText;
     return h_encText
 
 
@@ -34,10 +34,20 @@ def get_encSecKey():
 
 
 def AES_encrypt(text, key, iv):
+    print "text="+text
+    print "text.length="+str(len(text))
+    print "key="+key
+    print "iv="+iv
     pad = 16 - len(text) % 16
+    print "pad=" + str(pad);
     text = text + pad * chr(pad)
+    print "text2="+text
+    print "text2.length=" + str(len(text))
     encryptor = AES.new(key, AES.MODE_CBC, iv)
+    print "iv="+iv
     encrypt_text = encryptor.encrypt(text)
+    print "encrypt_text="+encrypt_text
+    print "encrypt_text.lenght="+str(len(encrypt_text))
     encrypt_text = base64.b64encode(encrypt_text)
     return encrypt_text
 
@@ -55,10 +65,12 @@ if __name__ == "__main__":
     # url = "http://music.163.com/weapi/v1/resource/comments/R_SO_4_30953009/?csrf_token="
     # R_SO_4_186016
     url = "http://music.163.com/weapi/v1/resource/comments/R_SO_4_186016/?csrf_token="
-    params = get_params();
-    encSecKey = get_encSecKey();
-    json_text = get_json(url, params, encSecKey)
-    json_dict = json.loads(json_text)
-    print json_dict['total']
-    for item in json_dict['comments']:
-        print item['content'].encode('utf8', 'ignore')
+    params = get_params()
+    encSecKey = get_encSecKey()
+
+
+    # json_text = get_json(url, params, encSecKey)
+    # json_dict = json.loads(json_text)
+    # print json_dict['total']
+    # for item in json_dict['comments']:
+    #     print item['content'].encode('utf8', 'ignore')

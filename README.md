@@ -9,3 +9,4 @@
 |lab005|urlcode|
 |lab006|打印|
 |lab007|unicode和str|
+|lab008|调用外部命令|

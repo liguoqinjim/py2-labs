@@ -88,3 +88,4 @@ ENV/
 # Rope project settings
 .ropeproject
 .idea/
+lab008/node_modules/

@@ -16,3 +16,4 @@
 |lab012|sleep|
 |lab013|时间戳|
 |lab014|随机数|
+|lab015|faker|https://github.com/joke2k/faker|

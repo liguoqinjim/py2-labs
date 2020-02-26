@@ -19,3 +19,4 @@
 |lab015|faker|https://github.com/joke2k/faker|
 |lab016|demjson|https://github.com/dmeranda/demjson|
 |lab017|控制台打印中文||
+|lab018|lxml|https://github.com/lxml/lxml|

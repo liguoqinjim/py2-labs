@@ -17,3 +17,5 @@
 |lab013|时间戳|
 |lab014|随机数|
 |lab015|faker|https://github.com/joke2k/faker|
+|lab016|demjson|https://github.com/dmeranda/demjson|
+|lab017|控制台打印中文||

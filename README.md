@@ -20,3 +20,5 @@
 |lab016|demjson|https://github.com/dmeranda/demjson|
 |lab017|控制台打印中文||
 |lab018|lxml|https://github.com/lxml/lxml|
+|lab019|AES加密解密|TODO |
+|lab020|base64||
